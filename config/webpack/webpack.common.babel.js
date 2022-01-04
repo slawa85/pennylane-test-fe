@@ -11,7 +11,7 @@ module.exports = {
     },
     resolve: {
         modules: ['src', 'node_modules'],
-        extensions: ['*', '.js', '.scss', '.css']
+        extensions: ['*', '.js', '.scss', '.css', '.jsx']
     },
     plugins: [
         new webpack.ProgressPlugin(),
