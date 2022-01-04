@@ -6,7 +6,7 @@ import recipesReducer from './recipe';
 
 const rootReducer = combineReducers({
     recipes: recipesReducer,
-    ingredients: ingredientsReducer
+    ingredients: ingredientsReducer,
 });
 
 const persistConfig = {

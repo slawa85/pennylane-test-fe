@@ -15,6 +15,7 @@ export function fetchIngredients() {
             if(response.ok) {
                 const data = await response.json();
                 dispatch(fetchIngredientsSuccess(data.ingredients));
+
                 return;
             }
             throw new Error('Fetch ingredients failed');

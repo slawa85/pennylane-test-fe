@@ -2,6 +2,7 @@ import {
     FETCH_RECIPES_PENDING,
     FETCH_RECIPES_SUCCESS,
     FETCH_RECIPES_ERROR,
+    FETCH_INGREDIENTS_PENDING
 } from '../actions/types';
 
 const initialState = {
@@ -22,6 +23,11 @@ export default function recipesReducer(state = initialState, action) {
             ...state,
             pending: false,
             data: action.payload,
+        };
+    case FETCH_INGREDIENTS_PENDING:
+        return {
+            ...state,
+            data: [],
         };
     case FETCH_RECIPES_ERROR:
         return {
